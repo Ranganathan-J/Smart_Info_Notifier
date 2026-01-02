@@ -40,6 +40,6 @@ class RawTextStoragePipeline:
 
         file_path.write_text(content, encoding="utf-8")
 
-         logger.info(f"Stored raw content: {file_path}")
+        logger.info(f"Stored raw content: {file_path}")
 
         return item
