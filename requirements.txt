@@ -1,0 +1,32 @@
+# ================================
+# Core
+# ================================
+python-dotenv>=1.0.1
+pydantic>=2.7
+pydantic-settings>=2.3
+PyYAML>=6.0.1
+loguru>=0.7.2
+
+# ================================
+# Web Scraping (Scrapy-based)
+# ================================
+scrapy>=2.11
+w3lib>=2.2
+lxml>=5.2
+beautifulsoup4>=4.12
+feedparser>=6.0
+
+# ================================
+# Data Handling
+# ================================
+pandas>=2.2
+openpyxl>=3.1
+
+# ================================
+# LangChain + LLM
+# ================================
+langchain>=0.2
+langchain-core>=0.2
+langchain-community>=0.2
+langchain-groq>=0.1
+

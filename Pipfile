@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = ">=1.0.1"
+pydantic = ">=2.7"
+pydantic-settings = ">=2.3"
+pyyaml = ">=6.0.1"
+loguru = ">=0.7.2"
+scrapy = ">=2.11"
+w3lib = ">=2.2"
+lxml = ">=5.2"
+beautifulsoup4 = ">=4.12"
+feedparser = ">=6.0"
+pandas = ">=2.2"
+openpyxl = ">=3.1"
+langchain = ">=0.2"
+langchain-core = ">=0.2"
+langchain-community = ">=0.2"
+langchain-groq = ">=0.1"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.8"

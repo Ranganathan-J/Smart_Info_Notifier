@@ -1,0 +1,36 @@
+app:
+  name: regulatory-intelligence-ai
+  timezone: Asia/Kolkata
+  environment: development
+
+paths:
+  source_excel: config/sources.xlsx
+  raw_data: data/raw
+  processed_data: data/processed
+  logs: data/logs/app.log
+
+scraper:
+  request_timeout: 15
+  user_agent: "RegulatoryMonitorBot/1.0"
+  max_retries: 3
+
+llm:
+  provider: groq
+  model: llama-3.1-70b-versatile
+  temperature: 0
+
+analysis:
+  impact_levels:
+    high: ["capital", "penalty", "mandatory", "cease", "ban"]
+    medium: ["reporting", "disclosure", "timeline"]
+    low: ["clarification", "format", "procedural"]
+
+notifications:
+  email:
+    enabled: true
+    send_high_immediately: true
+    daily_digest_time: "18:00"
+
+scheduler:
+  enabled: true
+  run_frequency: daily
